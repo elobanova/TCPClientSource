@@ -13,12 +13,12 @@
 #define JOKER_REQUEST_TYPE 1
 #define JOKER_RESPONSE_TYPE 2
 
-typedef struct response_header {
+typedef struct {
 	uint8_t type;
 	uint32_t joke_length;
 }__attribute__ ((__packed__)) response_header;
 
-typedef struct request_header {
+typedef struct {
 	uint8_t type;
 	uint8_t len_first_name;
 	uint8_t len_last_name;
